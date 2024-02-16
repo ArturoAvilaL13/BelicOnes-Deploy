@@ -1,0 +1,97 @@
+#agregarCarneDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#carneForm {
+  max-height: fit-content;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#carneForm > div > input,
+.tamanoDiv {
+  width: 400px;
+  border-radius: 5px;
+}
+
+select {
+  height: 54px;
+  background: none !important;
+  border: none !important;
+}
+
+.tamanoDiv > label {
+  background: none !important;
+  border: none !important;
+  border-right: 2px black solid !important;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#archivo:hover {
+  box-shadow: 0px 0px 2px 2px #eb953f !important;
+}
+
+#divImagen {
+  max-width: 390px !important;
+  max-height: 390px !important;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: auto;
+}
+
+#imagen {
+  width: 95%;
+  height: 95%;
+}
+
+.botonesFormulario {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 430px) {
+  #carneForm > div > input,
+  .tamanoDiv {
+    width: 300px;
+  }
+  #divImagen {
+    max-width: 250px !important;
+    max-height: 250px !important;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+  }
+  .botonesFormulario {
+    width: 60%;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .botonesFormulario > button {
+    width: 250px;
+  }
+  #agregarCarne {
+    max-width: 390px;
+    background-color: violet;
+  }
+}
