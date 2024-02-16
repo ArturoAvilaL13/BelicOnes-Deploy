@@ -26,7 +26,7 @@ public class Carne implements Serializable {
     @Column(name = "precio_carne")
     private double precioCarne;
     @Lob
-    @Column(name = "imagen_carne",columnDefinition = "LONGTEXT")
+    @Column(name = "imagen_carne",columnDefinition = "TEXT")
     private String imagenCarne;
     @Column(name = "fk_id_tipo_de_corte")
     private int fkIdTipoDeCorte;
